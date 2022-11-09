@@ -33,7 +33,11 @@ const immutable secara rekursif (semua object didalam object bersifat immutable)
 
 ### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 Membuat app baru dengan `flutter create counter_7`
+
 Mengedit `floatingActionButton`
+
 Membuat method untuk menghitung decrement counter
+
 Menambahkan conditional untuk menghilangkan tombol `-` apabila nilai counter == 0
+
 Menambahkan conditional untuk mengecek counter apakah genap atau ganjil untuk di-render
