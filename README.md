@@ -1,16 +1,43 @@
-# counter_7
+# Tugas 7
 
-A new Flutter project.
+### Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
+Stateful Widget memiliki State yang bisa berubah setelah dibuat, Stateless Widget memiliki State yang tidak bisa berubah setelah dibuat.
 
-## Getting Started
+### Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+`MaterialApp`: Widget untuk membuat aplikasi material
 
-This project is a starting point for a Flutter application.
+`Scaffold`: Widget untuk mengimplementasikan layout Material Design
 
-A few resources to get you started if this is your first Flutter project:
+`AppBar`: Widget untuk bar yang ada di atas layar
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+`Center`: Widget untuk meletakkan child widget di tengah-tengah parent
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+`Column`: Widget untuk menaruh widget children di suatu kolom
+
+`Text`: Widget untuk menaruh teks
+
+`Padding`: Widget untuk memberi padding pada childnya
+
+`Row`: Widget untuk menaruh widget children di suatu baris
+
+`FloatingActionButton`: Widget untuk menampilkan button lingkaran
+
+`Spacer`: Widget untuk memberi spasi pada flex container
+
+### Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut.
+Memberi tahu framework bahwa State pada `this` object telah berubah, yang akan mengakibatkan framework membangun object yang baru sesuai State.
+
+### Jelaskan perbedaan antara const dengan final.
+const immutable sejak compile-time, final tidak harus (bisa dieksekusi saat runtime).
+const immutable secara rekursif (semua object didalam object bersifat immutable), final tidak.
+
+### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+Membuat app baru dengan `flutter create counter_7`
+
+Mengedit `floatingActionButton`
+
+Membuat method untuk menghitung decrement counter
+
+Menambahkan conditional untuk menghilangkan tombol `-` apabila nilai counter == 0
+
+Menambahkan conditional untuk mengecek counter apakah genap atau ganjil untuk di-render
