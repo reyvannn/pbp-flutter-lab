@@ -41,3 +41,45 @@ Membuat method untuk menghitung decrement counter
 Menambahkan conditional untuk menghilangkan tombol `-` apabila nilai counter == 0
 
 Menambahkan conditional untuk mengecek counter apakah genap atau ganjil untuk di-render
+
+# Tugas 8
+
+### Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
+
+Navigator.push menambahkan route ke dalam stack tanpa membuang route sebelumnya
+
+Navigator.pushReplacement menambahkan route ke dalam stack dan route sebelumnya juga dihapus
+
+### Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+Drawer = Layar samping yang mengandung link penting pada aplikasi.
+
+Navigator = Widget yang membantu user menavigasi ke rute-rute lain.
+
+ListTile = Widget yang mengisi ListView.
+
+DropdownButton = Widget yang memiliki pilihan item yang bisa dipilih user.
+
+TextFormField = Form TextField.
+
+TextButton = Class yang digunakan untuk menampilkan text label.
+
+### Sebutkan jenis-jenis event yang ada pada Flutter
+onPressed
+onChange
+onSaved
+onTap
+onHover
+
+### Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+Navigator berfungsi dengan menyimpan stack dari route-route yang merupakan page. 
+
+Method push untuk berpindah ke route yang ditentukan dengan builder yang diberikan, yang menghasilkan widget page yang dituju. 
+
+Pop atau back button berguna untuk kembali ke page sebelumnya.
+
+### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+Menambahkan drawer
+
+Membuat page untuk form beserta statenya
+
+Membuat page untuk memunculkan data
