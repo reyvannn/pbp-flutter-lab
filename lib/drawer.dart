@@ -1,3 +1,4 @@
+import 'package:counter_7/watch_list.dart';
 import 'package:flutter/material.dart';
 import 'package:counter_7/form_budget.dart';
 import 'package:counter_7/main.dart';
@@ -7,11 +8,9 @@ Drawer buildDrawer(BuildContext context){
   return Drawer(
     child: Column(
       children: [
-        // Menambahkan clickable menu
         ListTile(
           title: const Text('Counter'),
           onTap: () {
-            // Route menu ke halaman utama
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => const MyHomePage()),
@@ -21,7 +20,6 @@ Drawer buildDrawer(BuildContext context){
         ListTile(
           title: const Text('Tambah Budget'),
           onTap: () {
-            // Route menu ke halaman form
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => const FormBudgetPage()),
@@ -31,10 +29,18 @@ Drawer buildDrawer(BuildContext context){
         ListTile(
           title: const Text('Data Budget'),
           onTap: () {
-            // Route menu ke halaman form
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => const DataBudgetPage()),
+            );
+          },
+        ),
+        ListTile(
+          title: const Text('My Watch List'),
+          onTap: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const myWatchListPage()),
             );
           },
         ),
